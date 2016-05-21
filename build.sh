@@ -1,7 +1,14 @@
 #!/bin/bash
 set -e
+
+# init ubuntu
 apt-get update -y
 apt-get install -y curl bzip2 build-essential python git
+
+# https://github.com/meteor/meteor/issues/4019
+apt-get install locales
+locale-gen en_US.UTF-8
+localedef -i en_GB -f UTF-8 en_US.UTF-8
 
 # install node
 NODE_VERSION=0.10.43
