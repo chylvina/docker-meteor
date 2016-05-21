@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 
 ENV METEORD_DIR /opt/meteord
 RUN mkdir -p $METEORD_DIR
