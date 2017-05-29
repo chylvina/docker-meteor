@@ -1,4 +1,4 @@
-FROM node:7.10.0
+FROM node:4.8.3
 
 ENV METEORD_DIR /opt/meteord
 RUN mkdir -p $METEORD_DIR
