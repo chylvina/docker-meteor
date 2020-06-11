@@ -1,7 +1,3 @@
-FROM node:4.8.3
+FROM node:12.18.0
 
-ENV METEORD_DIR /opt/meteord
-RUN mkdir -p $METEORD_DIR
-COPY ./build.sh $METEORD_DIR
-
-RUN curl -sL https://install.meteor.com | sed s/--progress-bar/-sL/g | /bin/sh
+RUN curl -sL https://install.meteor.com | /bin/sh

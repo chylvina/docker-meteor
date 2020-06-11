@@ -11,7 +11,7 @@ locale-gen en_US.UTF-8
 localedef -i en_GB -f UTF-8 en_US.UTF-8
 
 # install node
-NODE_VERSION=0.10.43
+NODE_VERSION=10.20.1
 NODE_ARCH=x64
 
 # check we need to do this or not
